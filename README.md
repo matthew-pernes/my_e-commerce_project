@@ -5,6 +5,7 @@ Raw data can be found in raw_data.csv
 
 Queries and in-depth insights for data interpretation are found in MySQL_queries.sql
 
+-----
 
 📊 Project Highlights & Insight Summary
 1. Logistics Efficiency by Shipment Mode
