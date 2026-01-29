@@ -16,14 +16,14 @@ Business Impact: Targeted a 5% improvement in on-time arrivals for the next quar
 -----
 
 2. Discount Strategy vs. Customer Satisfaction
-Insight: Used range-based grouping to find that the 31-50% discount bracket yields the highest customer ratings.
+Insight: Used range-based grouping to find that the 31-50 discount bracket yields the highest customer ratings.
 
 Business Impact: Recommended a service quality focus for the 21-40% range to bridge the satisfaction gap.
 
 -----
 
 3. Repeat Customer Retention
-Insight: Analyzed delivery quality for customers with 2–6 prior purchases.
+Insight: Analyzed delivery quality for customers with repeat purchases.
 
 Business Impact: Found that 4th–6th orders suffer from higher delays; suggested loyalty incentives and prioritized shipping for high-frequency shoppers.
 
