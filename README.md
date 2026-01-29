@@ -18,7 +18,7 @@ Business Impact: Targeted a 5% improvement in on-time arrivals for the next quar
 2. Discount Strategy vs. Customer Satisfaction
 Insight: Used range-based grouping to find that the 31-50 discount bracket yields the highest customer ratings.
 
-Business Impact: Recommended a service quality focus for the 21-40% range to bridge the satisfaction gap.
+Business Impact: Recommended a service quality focus for the 21-40 discount range to bridge the satisfaction gap.
 
 -----
 
