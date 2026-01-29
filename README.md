@@ -3,10 +3,10 @@ Analyzed 10k shipping records from a denormalized dataset using SQL (MySQL) to u
 
 Raw data can be found in raw_data.csv
 
-Queries can be found in MySQL_queries.sql
+Queries and in-depth insights for data interpretation are found in MySQL_queries.sql
 
 
-📊 Project Highlights & Insights
+📊 Project Highlights & Insight Summary
 1. Logistics Efficiency by Shipment Mode
 Insight: Evaluated volume vs. delay counts across Flight, Ship, and Road.
 
