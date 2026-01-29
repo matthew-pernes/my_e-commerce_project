@@ -1,6 +1,7 @@
 /* QUERY 1 - This query examines the shipment deliveries done by the three different modes of shipments.
 With columns composed of mode of shipment, total shipments, on time and delayed shipment count(s), rate of shipments done on time.
-RECOMMENDATION BASED ON DATA: Reinforce methods to improve rate of shipments arriving on time, hoping to improve by 5% within the next quarter. */
+RECOMMENDATION BASED ON DATA: Reinforce methods to improve rate of shipments arriving on time, especially with 
+deliveries done though sea given it has the most volume. Aiming to improve by 5% in on-time rates across all shipment modes within the next quarter. */
 SELECT 
 	mode_of_shipment,
 	COUNT(*) AS total_shipments,
@@ -13,8 +14,8 @@ GROUP BY
 ;
 
 /* QUERY 2 - This query shows the number of customers per discount brackets and their customer rating.
-RECOMMENDATION BASED ON DATA: The 31-50 discount range seems to yield the highest customer rating reviews.
-Focus on improving customer service quality for products in the 21-40 discount range. */
+RECOMMENDATION BASED ON DATA: The 31-50 discount range yields the highest customer rating reviews. Reaffirming the efficiency of this discount range.
+Systemic improvements for customer service quality for discounts in the 21-40 range is advised as it ranks the lowest amongst discount ranges per volume. */
 SELECT 
 	customer_rating,
     COUNT(CASE WHEN discount_offered BETWEEN 1 AND 20 THEN 1 ELSE NULL END) AS '1-20 discount',
@@ -30,7 +31,7 @@ ORDER BY
 
 /* QUERY 3 - In this query, the quality of delivery is group by repeat customers. The data showing the different rates for repeat customers
 and the average rating of their deliveries.
-RECOMMENDATION BASED ON DATA: Majority of cusotmers order 2-4 products. Business recommendations may lie in incentivizing orders beyond the
+RECOMMENDATION BASED ON DATA: Majority of customers order 2-4 products. Improvement in sales may lie in incentivizing orders beyond the
 usual 2-4 range by improving on-time rates for 4th-6th orders. */
 SELECT 
 	prior_purchases,
@@ -48,7 +49,7 @@ ORDER BY
 /* QUERY 4 - This query uses the 'FLOOR' syntax to discover the efficiency of product delivery. 
 Further taking into account average product cost and their respective number of orders. 
 RECOMMENDATION BASED ON DATA: Orders within 4000-5000 grams are significantly below the 50% on-time rate of delivery.
-Structural improvements are needed for these orders as they make up the majority of shipments delivered. */
+Structural improvements for package care and delivery-speed are needed for these orders as they make up the majority of shipments delivered. */
 SELECT 
 	FLOOR(weight_in_gms / 1000) * 1000 AS weight_category,
     AVG(reached_on_time) * 100 AS on_time_rate,
